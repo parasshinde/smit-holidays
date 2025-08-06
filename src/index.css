@@ -161,7 +161,7 @@
   }
 
   .card-destination {
-    @apply card-travel hover:scale-105 cursor-pointer group;
+    @apply card-travel hover:scale-105 cursor-pointer;
   }
 
   .card-package {
