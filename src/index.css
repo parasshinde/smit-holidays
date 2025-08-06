@@ -152,7 +152,7 @@
   }
 
   .btn-hero {
-    @apply btn-travel bg-gradient-to-r from-primary to-accent text-white shadow-2xl hover:shadow-3xl hover:scale-110 px-8 py-4 text-lg font-bold;
+    @apply btn-travel bg-gradient-to-r from-primary to-accent text-white shadow-2xl hover:shadow-hover hover:scale-110 px-8 py-4 text-lg font-bold;
   }
 
   /* Card Components */
