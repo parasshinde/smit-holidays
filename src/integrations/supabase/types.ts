@@ -14,24 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      Public_Queries: {
+      customer_queries: {
         Row: {
-          Gmail: string | null
-          id: number
-          Name: string
-          Phone_Number: number | null
+          budget_range: string | null
+          created_at: string
+          destination: string | null
+          email: string | null
+          id: string
+          message: string | null
+          name: string
+          phone_number: string | null
+          travel_date: string | null
+          travelers: number | null
         }
         Insert: {
-          Gmail?: string | null
-          id?: number
-          Name: string
-          Phone_Number?: number | null
+          budget_range?: string | null
+          created_at?: string
+          destination?: string | null
+          email?: string | null
+          id?: string
+          message?: string | null
+          name: string
+          phone_number?: string | null
+          travel_date?: string | null
+          travelers?: number | null
         }
         Update: {
-          Gmail?: string | null
-          id?: number
-          Name?: string
-          Phone_Number?: number | null
+          budget_range?: string | null
+          created_at?: string
+          destination?: string | null
+          email?: string | null
+          id?: string
+          message?: string | null
+          name?: string
+          phone_number?: string | null
+          travel_date?: string | null
+          travelers?: number | null
         }
         Relationships: []
       }

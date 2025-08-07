@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -15,25 +16,52 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message Sent Successfully!",
-      description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
-    });
     
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      destination: '',
-      travelDate: '',
-      travelers: '1',
-      budget: '',
-      message: ''
-    });
+    try {
+      // Save query to Supabase
+      const { error } = await supabase
+        .from('customer_queries')
+        .insert({
+          name: formData.name,
+          email: formData.email || null,
+          phone_number: formData.phone || null,
+          destination: formData.destination || null,
+          travel_date: formData.travelDate || null,
+          travelers: formData.travelers ? parseInt(formData.travelers) : null,
+          budget_range: formData.budget || null,
+          message: formData.message || null
+        });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        destination: '',
+        travelDate: '',
+        travelers: '1',
+        budget: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error saving query:', error);
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
