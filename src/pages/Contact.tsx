@@ -75,25 +75,25 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 98765 43210', '+91 98765 43211'],
+      details: ['+91 9011948181', '+91 9011757373'],
       description: 'Available 24/7 for emergencies'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@smitholidays.com', 'support@smitholidays.com'],
+      details: ['smitholidays24@gmail.com'],
       description: 'We respond within 2 hours'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Travel Street', 'Mumbai, Maharashtra 400001'],
-      description: 'Monday to Saturday, 10 AM - 7 PM'
+      details: ['Shop No 15, Westend Shopping Building, opp. D\'mart, Ward No. 8, Aundh Gaon, Aundh', 'Pune, Maharashtra 411007, India'],
+      description: '10 AM - 7 PM, Monday to Saturday, Sunday Holiday'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Mon - Sat: 10 AM - 7 PM', 'Sunday: 11 AM - 5 PM'],
+      details: ['Mon - Sat: 10 AM - 7 PM', 'Sunday: Holiday'],
       description: 'Extended hours during peak season'
     }
   ];
@@ -281,7 +281,7 @@ const Contact = () => {
                   <div className="text-center">
                     <MapPin className="h-16 w-16 mx-auto mb-4 animate-float" />
                     <h3 className="text-xl font-bold mb-2">Visit Our Office</h3>
-                    <p className="opacity-90">123 Travel Street, Mumbai</p>
+                    <p className="opacity-90">Shop No 15, Westend Shopping Building, opp. D'mart, Ward No. 8, Aundh Gaon, Aundh, Pune, Maharashtra 411007, India</p>
                     <p className="text-sm opacity-75 mt-2">Interactive map would be embedded here</p>
                   </div>
                 </div>
@@ -295,14 +295,14 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Emergency Hotline</p>
-                      <p className="text-sm text-muted-foreground">+91 98765 43210</p>
+                      <p className="text-sm text-muted-foreground">+91 9011948181</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3 p-3 bg-accent/5 rounded-xl">
                     <Mail className="h-5 w-5 text-accent" />
                     <div>
                       <p className="font-medium">Quick Response</p>
-                      <p className="text-sm text-muted-foreground">info@smitholidays.com</p>
+                      <p className="text-sm text-muted-foreground">smitholidays24@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -376,10 +376,10 @@ const Contact = () => {
             the vacation of your dreams together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919876543210" className="btn-accent">
+            <a href="tel:+919011948181" className="btn-accent">
               Call Now
             </a>
-            <a href="mailto:info@smitholidays.com" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
+            <a href="mailto:smitholidays24@gmail.com" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
               Email Us
             </a>
           </div>

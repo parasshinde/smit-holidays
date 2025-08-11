@@ -96,18 +96,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-background/80">+91 98765 43210</span>
+                <span className="text-background/80">+91 9011948181 / +91 9011757373</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-background/80">info@smitholidays.com</span>
+                <span className="text-background/80">smitholidays24@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <span className="text-background/80">
-                  123 Travel Street,<br />
-                  Mumbai, Maharashtra 400001<br />
-                  India
+                  Shop No 15, Westend Shopping Building, opp. D'mart, Ward No. 8, Aundh Gaon, Aundh<br />
+                  Pune, Maharashtra 411007, India
                 </span>
               </div>
             </div>
