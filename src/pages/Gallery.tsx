@@ -275,8 +275,8 @@ const Gallery = () => {
             <a href="/contact" className="btn-accent">
               Plan My Trip
             </a>
-            <a href="/packages" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
-              Browse Packages
+            <a href="/services#customize-packages" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
+              Customize Packages
             </a>
           </div>
         </div>

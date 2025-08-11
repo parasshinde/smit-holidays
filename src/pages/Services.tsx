@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Car, BadgeCheck, Wallet, IdCard, Shield, Briefcase, Ticket } from "lucide-react";
+import { Car, BadgeCheck, Wallet, IdCard, Shield, Briefcase, Ticket, SlidersHorizontal } from "lucide-react";
 
 const Services = () => {
   const services = useMemo(() => [
@@ -39,6 +39,12 @@ const Services = () => {
       description: "Fully Independent Travel plans tailored to your preferences and pace.",
       icon: Briefcase,
       features: ["Custom itineraries", "Flexible dates", "Handpicked stays"],
+    },
+    {
+      title: "Customize Packages",
+      description: "Design your perfect itinerary with tailored hotels, activities, and dates.",
+      icon: SlidersHorizontal,
+      features: ["Personalized planning", "Any destination", "Budget-friendly options"],
     },
     {
       title: "Air, Bus Tickets",
@@ -118,7 +124,7 @@ const Services = () => {
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {services.map(({ title, description, icon: Icon, features }) => (
-                <article key={title} className="card-travel p-6">
+                <article key={title} id={title === "Customize Packages" ? "customize-packages" : undefined} className="card-travel p-6">
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-xl bg-primary/10 text-primary">
                       <Icon className="h-6 w-6" />

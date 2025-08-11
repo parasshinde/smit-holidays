@@ -100,12 +100,12 @@ const Home = () => {
             the world like never before with Smit Holidays.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up">
-            <Link to="/packages" className="btn-hero">
-              Explore Packages
+            <Link to="/services#customize-packages" className="btn-hero">
+              Customize Packages
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <Link to="/destinations" className="btn-outline bg-white/20 border-white text-white hover:bg-white hover:text-foreground">
-              View Destinations
+            <Link to="/services" className="btn-outline bg-white/20 border-white text-white hover:bg-white hover:text-foreground">
+              View Services
             </Link>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Home = () => {
             {destinations.map((destination, index) => (
               <Link 
                 key={index} 
-                to="/destinations"
+                to="/services"
                 className="card-destination group"
               >
                 <div className="relative overflow-hidden">
@@ -174,8 +174,8 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/destinations" className="btn-primary">
-              View All Destinations
+            <Link to="/services" className="btn-primary">
+              View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -223,8 +223,8 @@ const Home = () => {
               Plan My Trip
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <Link to="/packages" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
-              Browse Packages
+            <Link to="/services#customize-packages" className="btn-outline border-white text-white hover:bg-white hover:text-foreground">
+              Customize Packages
             </Link>
           </div>
         </div>
