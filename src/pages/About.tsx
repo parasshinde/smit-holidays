@@ -10,19 +10,19 @@ const About = () => {
 
   const team = [
     {
-      name: 'Smit Patel',
+      name: 'Ganesh Shinde',
       role: 'Founder & CEO',
       image: '👨‍💼',
       description: 'Travel enthusiast with 15+ years in the industry'
     },
     {
-      name: 'Priya Singh',
+      name: 'Amit Vishwakarma',
       role: 'Head of Operations',
       image: '👩‍💼',
       description: 'Expert in travel planning and customer service'
     },
     {
-      name: 'Raj Kumar',
+      name: 'Paras Shinde',
       role: 'Travel Consultant',
       image: '👨‍🎓',
       description: 'Specialist in international destinations'
@@ -66,7 +66,7 @@ const About = () => {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="heading-hero text-gradient mb-6">About Smit Holidays</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Since 2015, we've been crafting extraordinary travel experiences that go beyond ordinary vacations. 
+              Since 2002, we've been crafting extraordinary travel experiences that go beyond ordinary vacations. 
               Our passion for exploration and commitment to excellence has made us one of India's most trusted travel partners.
             </p>
           </div>
@@ -98,7 +98,7 @@ const About = () => {
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
                   Smit Holidays was born from a simple belief: that travel has the power to transform lives. 
-                  Founded by Smit Patel in 2015, our journey began with a vision to make extraordinary travel 
+                  Founded by Ganesh Shinde in 2002, our journey began with a vision to make extraordinary travel 
                   experiences accessible to everyone.
                 </p>
                 <p>

@@ -10,7 +10,6 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'Gallery', href: '/gallery' },
     { name: 'Reviews', href: '/reviews' },
     { name: 'Contact', href: '/contact' },
     { name: 'Plan My Trip', href: '/contact' },
@@ -39,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/80 leading-relaxed">
-              Creating unforgettable travel experiences since 2015. We specialize in crafting 
+              Creating unforgettable travel experiences since 2002. We specialize in crafting 
               personalized journeys that inspire wanderlust and create lasting memories.
             </p>
             <div className="flex space-x-4">

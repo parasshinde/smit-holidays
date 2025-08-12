@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, MapPin, Calendar, Users, Shield } from 'lucide-react';
+import { ArrowRight, Star, MapPin, Calendar, Users, Shield, BadgeCheck, FileText } from 'lucide-react';
 import heroImage from '@/assets/hero-travel.jpg';
-import indiaImage from '@/assets/india-destination.jpg';
-import europeImage from '@/assets/europe-destination.jpg';
-import maldivesImage from '@/assets/maldives-destination.jpg';
-import dubaiImage from '@/assets/dubai-destination.jpg';
 
 const Home = () => {
   const features = [
@@ -30,51 +26,25 @@ const Home = () => {
     }
   ];
 
-  const destinations = [
-    {
-      name: 'India',
-      image: indiaImage,
-      description: 'Explore the incredible diversity of India',
-      packages: '25+ Packages'
-    },
-    {
-      name: 'Europe',
-      image: europeImage,
-      description: 'Discover the charm of European cities',
-      packages: '18+ Packages'
-    },
-    {
-      name: 'Maldives',
-      image: maldivesImage,
-      description: 'Paradise islands and luxury resorts',
-      packages: '12+ Packages'
-    },
-    {
-      name: 'Dubai',
-      image: dubaiImage,
-      description: 'Modern marvels and desert adventures',
-      packages: '15+ Packages'
-    }
-  ];
 
   const testimonials = [
     {
       name: 'Priya Sharma',
-      location: 'Mumbai',
+      location: 'Pune',
       rating: 5,
       text: 'Smit Holidays made our Europe trip absolutely magical! Every detail was perfectly planned.',
       image: '👩‍💼'
     },
     {
       name: 'Raj Patel',
-      location: 'Delhi',
+      location: 'Pune',
       rating: 5,
       text: 'The Maldives honeymoon package exceeded all our expectations. Truly unforgettable!',
       image: '👨‍💻'
     },
     {
       name: 'Anita Reddy',
-      location: 'Bangalore',
+      location: 'Pune',
       rating: 5,
       text: 'Excellent service and amazing destinations. The best travel agency we have worked with!',
       image: '👩‍🔬'
@@ -139,45 +109,40 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Popular Destinations */}
+      {/* Services Spotlight: Visa & Passport */}
       <section className="section-padding">
         <div className="container-travel">
           <div className="text-center mb-16">
-            <h2 className="heading-section text-gradient">Popular Destinations</h2>
+            <h2 className="heading-section text-gradient">Visa Assistance & Passport Renewal</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore our most loved destinations and discover your next adventure.
+              Seamless documentation support for stress-free travel.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {destinations.map((destination, index) => (
-              <Link 
-                key={index} 
-                to="/services"
-                className="card-destination group"
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={destination.image} 
-                    alt={destination.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-smooth"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-xl font-bold mb-1">{destination.name}</h3>
-                    <p className="text-sm opacity-90 mb-2">{destination.description}</p>
-                    <span className="text-xs bg-accent px-2 py-1 rounded-full">
-                      {destination.packages}
-                    </span>
-                  </div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article className="card-travel p-8 hover:shadow-hover">
+              <div className="w-16 h-16 bg-gradient-sky rounded-2xl flex items-center justify-center mb-4 shadow-travel">
+                <BadgeCheck className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Visa Assistance</h3>
+              <p className="text-muted-foreground mb-4">
+                End-to-end guidance, document checks, appointment scheduling, and interview preparation for all major destinations.
+              </p>
+              <Link to="/services" className="story-link text-primary font-medium">
+                Learn more
               </Link>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link to="/services" className="btn-primary">
-              View All Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </article>
+            <article className="card-travel p-8 hover:shadow-hover">
+              <div className="w-16 h-16 bg-gradient-sunset rounded-2xl flex items-center justify-center mb-4 shadow-travel">
+                <FileText className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Passport Renewal</h3>
+              <p className="text-muted-foreground mb-4">
+                Fast-track passport renewals with error-free forms, slot booking, and doorstep updates till delivery.
+              </p>
+              <Link to="/services" className="story-link text-primary font-medium">
+                Learn more
+              </Link>
+            </article>
           </div>
         </div>
       </section>

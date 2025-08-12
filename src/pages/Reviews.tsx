@@ -124,6 +124,27 @@ const Reviews = () => {
     { rating: 1, percentage: 0, count: 0 }
   ];
 
+  const travelersTestimonials = [
+    {
+      name: 'Amit & Priya Sharma',
+      image: '👫',
+      text: 'Our honeymoon in Maldives was absolutely perfect! Every moment was magical.',
+      trip: 'Maldives Honeymoon'
+    },
+    {
+      name: 'Rajesh Family',
+      image: '👨‍👩‍👧‍👦',
+      text: 'The Europe tour was amazing. Our kids still talk about the Swiss Alps!',
+      trip: 'European Family Tour'
+    },
+    {
+      name: 'Sanjay & Friends',
+      image: '👨‍👨‍👦‍👦',
+      text: 'Dubai was incredible! The desert safari was the highlight of our trip.',
+      trip: 'Dubai Adventure'
+    }
+  ];
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -247,6 +268,28 @@ const Reviews = () => {
                     {review.category}
                   </span>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Happy Travelers (from Gallery) */}
+      <section className="section-padding bg-gradient-to-br from-primary/5 to-accent/5">
+        <div className="container-travel">
+          <div className="text-center mb-16">
+            <h2 className="heading-section text-gradient">Happy Travelers</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real stories from real people who trusted us with their dream vacations.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {travelersTestimonials.map((testimonial, index) => (
+              <div key={index} className="card-travel p-6 text-center">
+                <div className="text-4xl mb-4">{testimonial.image}</div>
+                <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
+                <h4 className="font-semibold mb-1">{testimonial.name}</h4>
+                <p className="text-sm text-primary font-medium">{testimonial.trip}</p>
               </div>
             ))}
           </div>

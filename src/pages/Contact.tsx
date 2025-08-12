@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -277,14 +278,17 @@ const Contact = () => {
             <div className="space-y-8">
               {/* Embedded Map */}
               <div className="card-travel overflow-hidden">
-                <div className="h-64 bg-gradient-sky flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <MapPin className="h-16 w-16 mx-auto mb-4 animate-float" />
-                    <h3 className="text-xl font-bold mb-2">Visit Our Office</h3>
-                    <p className="opacity-90">Shop No 15, Westend Shopping Building, opp. D'mart, Ward No. 8, Aundh Gaon, Aundh, Pune, Maharashtra 411007, India</p>
-                    <p className="text-sm opacity-75 mt-2">Interactive map would be embedded here</p>
-                  </div>
-                </div>
+                <AspectRatio ratio={16 / 9}>
+                  <iframe
+                    src="https://www.google.com/maps?q=Shop%20No%2015%2C%20Westend%20Shopping%20Building%2C%20opp.%20D%27mart%2C%20Ward%20No.%208%2C%20Aundh%20Gaon%2C%20Aundh%2C%20Pune%2C%20Maharashtra%20411007%2C%20India&output=embed"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Smit Holidays Office Location - Aundh Pune"
+                    className="w-full h-full rounded-xl"
+                  />
+                </AspectRatio>
               </div>
 
               {/* Quick Contact */}
