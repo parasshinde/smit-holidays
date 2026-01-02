@@ -180,7 +180,7 @@ const About = () => {
               The passionate professionals who make your travel dreams come true.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {team.map((member, index) => (
               <div key={index} className="card-travel p-6 text-center group hover:shadow-hover">
                 <div className="text-6xl mb-4">{member.image}</div>
