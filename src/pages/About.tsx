@@ -26,12 +26,6 @@ const About = () => {
       role: 'Travel Consultant',
       image: '👨‍🎓',
       description: 'Specialist in international destinations'
-    },
-    {
-      name: 'Anita Sharma',
-      role: 'Customer Relations',
-      image: '👩‍💻',
-      description: 'Dedicated to ensuring exceptional experiences'
     }
   ];
 

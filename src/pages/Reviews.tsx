@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Star, ThumbsUp, Calendar, MapPin, Quote } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Reviews = () => {
   const [filter, setFilter] = useState('All');
@@ -135,7 +136,7 @@ const Reviews = () => {
       name: 'Rajesh Family',
       image: '👨‍👩‍👧‍👦',
       text: 'The Europe tour was amazing. Our kids still talk about the Swiss Alps!',
-      trip: 'European Family Tour'
+      trip: 'Europe Family Tour'
     },
     {
       name: 'Sanjay & Friends',
@@ -306,9 +307,9 @@ const Reviews = () => {
             Traveled with us recently? We'd love to hear about your experience! 
             Your review helps other travelers make informed decisions.
           </p>
-          <a href="/contact" className="btn-primary">
-            Write a Review
-          </a>
+          <Link to="/contact" className="btn-primary">
+             Write a Review
+          </Link>
         </div>
       </section>
 
