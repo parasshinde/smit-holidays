@@ -4,8 +4,8 @@ const About = () => {
   const stats = [
     { number: '10,000+', label: 'Happy Travelers' },
     { number: '50+', label: 'Destinations' },
-    { number: '9+', label: 'Years Experience' },
-    { number: '500+', label: 'Successful Trips' }
+    { number: '24+', label: 'Years Experience' },
+    { number: '800+', label: 'Successful Trips' }
   ];
 
   const team = [
