@@ -73,7 +73,7 @@ const About = () => {
           <div className="flex flex-wrap justify-center gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">
                   {stat.number}
                 </div>
                 <p className="text-muted-foreground font-medium">{stat.label}</p>
