@@ -18,7 +18,7 @@ const About = () => {
     {
       name: 'Amit Vishwakarma',
       role: 'Head of Operations',
-      image: '👩‍💼',
+      image: '👨‍💼',
       description: 'Expert in travel planning and customer service'
     },
     {
