@@ -31,4 +31,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/        # We upload the COOKED meal
-        server-dir: ./public_html/ # Where it goes on Hostinger
+        server-dir: ./ # Where it goes on Hostinger
