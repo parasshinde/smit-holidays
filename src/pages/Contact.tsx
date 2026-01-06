@@ -36,8 +36,10 @@ const Contact = () => {
         });
 
       if (error) {
-        throw error;
-      }
+          console.log("Supabase Error FULL DETAIL:", error); // <--- Add this
+          console.log("Data being sent:", formData);         // <--- Add this
+          throw error;
+}
 
       toast({
         title: "Message Sent Successfully!",
