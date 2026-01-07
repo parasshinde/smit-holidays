@@ -13,7 +13,7 @@ const About = () => {
       name: 'Ganesh Shinde',
       role: 'Founder & CEO',
       image: '👨‍💼',
-      description: 'Travel enthusiast with 15+ years in the industry'
+      description: 'Travel enthusiast with 24+ years in the industry'
     },
     {
       name: 'Amit Vishwakarma',
