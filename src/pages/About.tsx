@@ -24,7 +24,7 @@ const About = () => {
     {
       name: 'Paras Shinde',
       role: 'Travel Consultant',
-      image: '👨‍🎓',
+      image: '👨‍💼',
       description: 'Specialist in international destinations'
     }
   ];
