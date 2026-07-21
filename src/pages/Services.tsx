@@ -36,15 +36,15 @@ const Services = () => {
     },
     {
       title: "FIT Packages",
-      description: "Fully Independent Travel plans tailored to your preferences and pace.",
+      description: "Fully Independent Travel plans tailored to your preferences and pace. We also offer Europamundo, Globus and Cosmos packages ",
       icon: Briefcase,
-      features: ["Custom itineraries", "Flexible dates", "Handpicked stays"],
+      features: ["Custom itineraries", "Flexible dates", "Handpicked stays"]
     },
     {
       title: "Customize Packages",
       description: "Design your perfect itinerary with tailored hotels, activities, and dates.",
       icon: SlidersHorizontal,
-      features: ["Personalized planning", "Any destination", "Budget-friendly options"],
+      features: ["Personalized planning", "Any destination", "Budget-friendly options", "Best Trips"],
     },
     {
       title: "Air, Bus Tickets",
