@@ -6,14 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-
-
 import Services from "./pages/Services";
-
 import Reviews from "./pages/Reviews";
+import TourPackages from "./pages/TourPackages";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import TourPackages from "./pages/TourPackages";
 
 const queryClient = new QueryClient();
 
@@ -27,14 +24,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            
-            
             <Route path="/services" element={<Services />} />
-            
+            <Route path="/packages" element={<TourPackages />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/Tour Packages" element={<TourPackages />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

@@ -6,15 +6,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Tour Packages', href: '/TourPackages' },
-    { name: 'Services', href: '/services' },
-    { name: 'Reviews', href: '/reviews' },
-    { name: 'Contact', href: '/contact' },
-    
-  ];
+const navigation = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Packages", href: "/packages" },
+  { name: "Reviews", href: "/reviews" },
+  { name: "Contact", href: "/contact" },
+];
 
   const isActive = (path: string) => location.pathname === path;
 
