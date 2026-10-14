@@ -6,6 +6,7 @@ type TourPackage = {
   location: string;
   duration: string;
   price: string;
+  pax:string;
   image: string;
   description: string;
 };
@@ -15,17 +16,19 @@ const tourPackages: TourPackage[] = [
     title: "Ashtavinayak Yatra",
     location: "Maharashtra",
     duration: "2 Days / 1 Nights",
-    price: "8870",
+    price: "₹8870",
+    pax: "4",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+      "GANPATIBAPPA.jpg",
     description:
-      "Relax on tropical beaches, explore hidden waterfalls, and enjoy a luxury island getaway.",
+      "Enjoy Ganpati Darshan for 1N/2D",
   },
   {
-    title: "Swiss Alps Adventure",
-    location: "Switzerland",
-    duration: "6 Days / 5 Nights",
-    price: "$899",
+    title: "Mahabaleshwar gateway",
+    location: "Maharashtra",
+    duration: "2 Days / 1 Nights",
+    price: "₹8100",
+    pax: "4",
     image:
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80",
     description:
@@ -36,16 +39,18 @@ const tourPackages: TourPackage[] = [
     location: "UAE",
     duration: "4 Days / 3 Nights",
     price: "$699",
+    pax: "4",
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80",
     description:
       "Enjoy breathtaking skyline views, desert safaris, and modern city experiences.",
-  },
-  {
+},
+{
     title: "Paris Romance Getaway",
     location: "France",
     duration: "5 Days / 4 Nights",
     price: "$799",
+    pax: "4",
     image:
       "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80",
     description:
@@ -56,6 +61,7 @@ const tourPackages: TourPackage[] = [
     location: "Maldives",
     duration: "7 Days / 6 Nights",
     price: "$1,199",
+    pax: "4",
     image:
       "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=80",
     description:
@@ -119,6 +125,8 @@ export default function TourPackages() {
                   </div>
 
                   <div className="flex items-center gap-1 text-accent">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
                     <Star className="h-4 w-4 fill-current" />
                     <Star className="h-4 w-4 fill-current" />
                     <Star className="h-4 w-4 fill-current" />
