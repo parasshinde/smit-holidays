@@ -19,7 +19,7 @@ const tourPackages: TourPackage[] = [
     price: "₹8870",
     pax: "4",
     image:
-      "C:/Data/Desktop/Data/Paras Workspace/smitholidays-1/GANPATIBAPPA.jpg",
+      "src/assets/GANPATIBAPPA.jpg",
     description:
       "Enjoy Ganpati Darshan for 1N/2D",
   },
